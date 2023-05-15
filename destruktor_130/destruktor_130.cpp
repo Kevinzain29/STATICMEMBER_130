@@ -34,6 +34,20 @@ void angka::cetakData() {
 	}
 }
 
+void angka::isiData() {
+	for (int i = 1;i <= panjang;i++) {
+		cout << i << " = ";cin >> arr[i];
+	}
+	cout << endl;
+}
+
+int main() {
+	angka belajarcpp(3); //construktor dipanggil
+	angka* ptrBelajarcpp = new angka(5); //construktor dipangggil
+	delete ptrBelajarcpp; //destruktor dipanggil
+
+	return 0;
+}//destruktor dipanggil
 
 
 
